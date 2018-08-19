@@ -20,6 +20,9 @@ export class EchartsLineChartComponent implements OnInit {
       title: {
         text: 'Echarts Line chart'
       },
+      tooltip: {
+        trigger: 'axis'
+      },
       xAxis: {
         type: 'value'
       },
