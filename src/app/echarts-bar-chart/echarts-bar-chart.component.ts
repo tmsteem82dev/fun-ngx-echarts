@@ -19,8 +19,14 @@ export class EchartsBarChartComponent implements OnInit {
       title: {
         text: 'Echarts bar chart'
       },
+      legend: {
+        data: ['Widgets', 'Doodads']
+      },
       tooltip: {
-        trigger: 'item'
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow'
+        }
       },
       xAxis: {
         type: 'category',
@@ -30,10 +36,12 @@ export class EchartsBarChartComponent implements OnInit {
         type: 'value'
       },
       series: [{
+        name: 'Widgets',
         type: 'bar',
         data: data1
       },
       {
+        name: 'Doodads',
         type: 'bar',
         data: data2
       }]
