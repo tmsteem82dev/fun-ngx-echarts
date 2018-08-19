@@ -4,11 +4,13 @@ import { NgxEchartsModule } from 'ngx-echarts';
 
 import { AppComponent } from './app.component';
 import { EchartsLineChartComponent } from './echarts-line-chart/echarts-line-chart.component';
+import { EchartsBarChartComponent } from './echarts-bar-chart/echarts-bar-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EchartsLineChartComponent
+    EchartsLineChartComponent,
+    EchartsBarChartComponent
   ],
   imports: [
     BrowserModule, NgxEchartsModule
